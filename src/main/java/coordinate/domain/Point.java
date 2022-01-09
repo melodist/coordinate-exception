@@ -8,7 +8,7 @@ public class Point {
 
     private Point(int x, int y) {
         if (isNotValid(x) || isNotValid(y)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("숫자의 범위가 적절하지 않습니다.");
         }
         this.x = x;
         this.y = y;
